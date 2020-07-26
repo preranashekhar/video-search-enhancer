@@ -1,0 +1,1884 @@
+{
+  "transcript": "hey I'm Kyle and welcome to text with TV we can be running a ton of services from this 23 terabyte server in an upcoming video before we get started we have to go over Docker thank you to hover.com for sponsoring this episode you can get 10% off your own custom domain name at Hubbard., I'm bored / text with what is Docker Docker is mainly a software development platform and kind of a virtualization technology that makes it easy for us to develop and deploy apps inside of neatly packaged virtual containerized Apartments meeting apps run the same no matter where they are or what machine they are running on their containers can be deployed to just about any machine without any compatibility issues or so your software stay is system agnostic making software similar to use less work to develop and easier to maintain and deploy these containers running on your computer or server acts like little micro gliders eat with very specific jobs each with their own operating system their own isolated CPU processes memory and network resources removed stopped and started again without affecting each other or the host machine containers usually run one specific tasks such as they might as well database or a notice application and then their networks together and potentially scaled a developer will usually start by accessing the doctor hug and online Cloud repository of Docker containers and pull one containing a pre-configured environment for their specific programming language such as Ruby or no JS with all the files and Frameworks needed to get started as well using containers for popular apps like Plex Media Server nextcloud in many other open source apps and tools many of which we will be installing an upcoming videos doctor is a form of virtualization but unlike virtual machines the resources are shared directly with the host this allows you to run Docker containers where you may only be able to run a few virtual machines you see a virtual machine have to quarantine off a set amount of resources hard drive space memory and processing power emulate hardware and then Boonton entire operating system then the VM communicates with the host computer via translator application running on the host operating system called a hypervisor natively with the system kernel bypassing the middleman on Linux machines and even Windows 10 and Windows Server 2016 in above this means you can run any version of Linux in a container and it will run natively not only that doctor uses less disk space to as it is able to reuse files efficiently by using a layered file system if you have multiple Docker images using the same base image for instance. Only keep a single copy of the file is needed and share them with each container or it's so how to use Docker install Docker on your machine and will provide the link in the description with a dockerfile between built into a Docker image which can be run as a Docker container okay let's break that down the doctor file is a surprisingly Simple Text document that instructs how the doctor image will be built like a blueprint U-verse select a basin wrench to start with using the from keyword would you can find a container to use from the doctor Hub like we mentioned before a bun to an Alpine Linux are popular choices from there you can run commands such as downloading installing and running your software of course we'll leave the docks pull up your file is complete we can build it using Docker build followed by the tea Flags we can name or image and password command the location of the dockerfile once complete you can verify your images existence with Docker images now you're built image can run a container of that image or we can push it to the cloud to share with others speaking of sharing with others if you don't create your own doctor imagine you just want to use a premade one you can pull in from the doctor hub using Docker pull and the image name you may also include a tag if one is available which may specify a virgin or variant of the software if you don't specify a tag the latest version will be what's patched container pull it down from the doctor Hub rebuild the image and then enter Docker run followed by the image name there of course many options available when running your container such as running into detach mode with takdi or assigning port for web services in containers with Docker container LS and as you add more to Bill Pierre here running a single container is fun but it's annoying to enter all of these commands to get a container running and he may want to control several containers as part of a single application such as running a nap and database together something you might want to do to run WordPress for example and we're going to be accomplishing that with Docker compose in our next video where we build a 23 terabyte Home Server if you are going to have a secure Home Server you have to get yourself a domain name for SSL so you can access that server anywhere in the world thank you to her. Com find you a 10% off your first Dominion by visiting hover.com forward text squid check out there find a domain name tool to find cool domain names with cool extensions and since we're building a home server which type that in and see what we are currently available that are related to Home Server and get him now while they're available and make sure you get that 10% off and support the show again my go to hotmail.com text with thank you for watching let me know if you'd be interested in the part 2 or we go deeper into Docker and we'll go over some of the specifics of dr. Laird and so on and stick around coming up or building at 23 terabyte server using Docker compose if you have any questions come chat with us on Discord link to that and everything else you need is in the description below all right thank you and I'll see you in the next video",
+  "word_timestamps": {
+    "2": [
+      280
+    ],
+    "10": [
+      125
+    ],
+    "23": [
+      7,
+      246,
+      286
+    ],
+    "2016": [
+      126
+    ],
+    "hey": [
+      0
+    ],
+    "I'm": [
+      0,
+      17
+    ],
+    "Kyle": [
+      0
+    ],
+    "and": [
+      0,
+      22,
+      25,
+      43,
+      44,
+      54,
+      58,
+      66,
+      68,
+      72,
+      75,
+      82,
+      90,
+      109,
+      111,
+      125,
+      126,
+      130,
+      144,
+      148,
+      175,
+      183,
+      202,
+      214,
+      227,
+      233,
+      238,
+      242,
+      264,
+      267,
+      271,
+      272,
+      274,
+      281,
+      284,
+      284,
+      292,
+      295
+    ],
+    "welcome": [
+      1
+    ],
+    "to": [
+      1,
+      11,
+      12,
+      25,
+      35,
+      41,
+      43,
+      44,
+      83,
+      100,
+      102,
+      105,
+      134,
+      135,
+      146,
+      163,
+      167,
+      169,
+      194,
+      194,
+      199,
+      228,
+      231,
+      232,
+      234,
+      240,
+      240,
+      242,
+      249,
+      250,
+      255,
+      262,
+      271,
+      276,
+      292
+    ],
+    "text": [
+      1,
+      17,
+      259,
+      276
+    ],
+    "with": [
+      1,
+      18,
+      48,
+      50,
+      81,
+      99,
+      115,
+      122,
+      144,
+      149,
+      164,
+      189,
+      194,
+      197,
+      221,
+      226,
+      243,
+      263,
+      277,
+      291
+    ],
+    "TV": [
+      1
+    ],
+    "we": [
+      5,
+      9,
+      10,
+      91,
+      168,
+      180,
+      182,
+      193,
+      245,
+      267,
+      280
+    ],
+    "can": [
+      5,
+      14,
+      35,
+      128,
+      153,
+      166,
+      173,
+      180,
+      183,
+      187,
+      191,
+      193,
+      200,
+      252
+    ],
+    "be": [
+      5,
+      35,
+      92,
+      102,
+      153,
+      161,
+      211,
+      243,
+      279
+    ],
+    "running": [
+      5,
+      33,
+      46,
+      117,
+      175,
+      219,
+      220,
+      229,
+      233,
+      237
+    ],
+    "a": [
+      6,
+      20,
+      23,
+      65,
+      69,
+      76,
+      94,
+      103,
+      104,
+      106,
+      119,
+      130,
+      137,
+      142,
+      150,
+      152,
+      153,
+      157,
+      161,
+      163,
+      166,
+      168,
+      192,
+      199,
+      204,
+      207,
+      209,
+      229,
+      232,
+      236,
+      237,
+      246,
+      249,
+      251,
+      256,
+      261,
+      265
+    ],
+    "ton": [
+      6
+    ],
+    "of": [
+      6,
+      23,
+      27,
+      74,
+      91,
+      94,
+      107,
+      129,
+      143,
+      176,
+      185,
+      192,
+      196,
+      208,
+      217,
+      231,
+      236,
+      282,
+      283
+    ],
+    "services": [
+      6,
+      224
+    ],
+    "from": [
+      6,
+      164,
+      167,
+      171,
+      201,
+      213
+    ],
+    "this": [
+      7,
+      13,
+      99,
+      127
+    ],
+    "terabyte": [
+      7,
+      246,
+      287
+    ],
+    "server": [
+      8,
+      46,
+      253,
+      266,
+      287
+    ],
+    "in": [
+      8,
+      88,
+      127,
+      130,
+      149,
+      200,
+      224,
+      244,
+      254,
+      267,
+      279,
+      293,
+      296
+    ],
+    "an": [
+      8,
+      92,
+      170
+    ],
+    "upcoming": [
+      8,
+      92
+    ],
+    "video": [
+      9,
+      245,
+      296
+    ],
+    "before": [
+      9,
+      168
+    ],
+    "get": [
+      10,
+      14,
+      83,
+      232,
+      250,
+      271,
+      273
+    ],
+    "started": [
+      10,
+      58,
+      83
+    ],
+    "have": [
+      10,
+      105,
+      139,
+      249,
+      250,
+      290
+    ],
+    "go": [
+      11,
+      275,
+      280,
+      282
+    ],
+    "over": [
+      11,
+      282
+    ],
+    "Docker": [
+      11,
+      19,
+      19,
+      74,
+      100,
+      139,
+      146,
+      147,
+      152,
+      154,
+      181,
+      189,
+      202,
+      215,
+      226,
+      243,
+      281,
+      288
+    ],
+    "thank": [
+      11,
+      254,
+      278,
+      295
+    ],
+    "you": [
+      12,
+      14,
+      100,
+      102,
+      104,
+      128,
+      138,
+      166,
+      172,
+      187,
+      197,
+      199,
+      200,
+      203,
+      209,
+      228,
+      239,
+      248,
+      250,
+      252,
+      255,
+      256,
+      273,
+      278,
+      290,
+      293,
+      295,
+      296
+    ],
+    "hover.com": [
+      12,
+      258
+    ],
+    "for": [
+      12,
+      25,
+      77,
+      86,
+      141,
+      223,
+      241,
+      251,
+      278
+    ],
+    "sponsoring": [
+      13
+    ],
+    "episode": [
+      13
+    ],
+    "10%": [
+      14,
+      256,
+      273
+    ],
+    "off": [
+      15,
+      106,
+      257,
+      274
+    ],
+    "your": [
+      15,
+      38,
+      46,
+      147,
+      176,
+      178,
+      187,
+      198,
+      219,
+      257
+    ],
+    "own": [
+      15,
+      50,
+      51,
+      198
+    ],
+    "custom": [
+      15
+    ],
+    "domain": [
+      16,
+      251,
+      261,
+      263
+    ],
+    "name": [
+      16,
+      183,
+      203,
+      216,
+      251,
+      262
+    ],
+    "at": [
+      16,
+      286
+    ],
+    "Hubbard.,": [
+      16
+    ],
+    "bored": [
+      17
+    ],
+    "/": [
+      17
+    ],
+    "what": [
+      18,
+      32,
+      267
+    ],
+    "is": [
+      19,
+      19,
+      39,
+      93,
+      135,
+      143,
+      157,
+      179,
+      205,
+      230,
+      293
+    ],
+    "mainly": [
+      20
+    ],
+    "software": [
+      20,
+      38,
+      41,
+      176,
+      208
+    ],
+    "development": [
+      21
+    ],
+    "platform": [
+      21
+    ],
+    "kind": [
+      22
+    ],
+    "virtualization": [
+      23,
+      94
+    ],
+    "technology": [
+      23
+    ],
+    "that": [
+      24,
+      132,
+      155,
+      159,
+      192,
+      243,
+      253,
+      267,
+      270,
+      273,
+      292
+    ],
+    "makes": [
+      24
+    ],
+    "it": [
+      24,
+      130,
+      135,
+      180,
+      193,
+      213
+    ],
+    "easy": [
+      25
+    ],
+    "us": [
+      25,
+      291
+    ],
+    "develop": [
+      25,
+      43
+    ],
+    "deploy": [
+      26,
+      44
+    ],
+    "apps": [
+      26,
+      30,
+      86,
+      90
+    ],
+    "inside": [
+      26
+    ],
+    "neatly": [
+      27
+    ],
+    "packaged": [
+      27
+    ],
+    "virtual": [
+      27,
+      96,
+      103,
+      105
+    ],
+    "containerized": [
+      28
+    ],
+    "Apartments": [
+      29
+    ],
+    "meeting": [
+      29
+    ],
+    "run": [
+      30,
+      62,
+      100,
+      103,
+      128,
+      131,
+      153,
+      173,
+      191,
+      215,
+      240
+    ],
+    "the": [
+      31,
+      60,
+      71,
+      81,
+      97,
+      99,
+      114,
+      115,
+      118,
+      122,
+      123,
+      140,
+      143,
+      148,
+      149,
+      156,
+      160,
+      164,
+      167,
+      177,
+      182,
+      185,
+      186,
+      194,
+      201,
+      203,
+      208,
+      210,
+      213,
+      214,
+      216,
+      254,
+      275,
+      280,
+      282,
+      293,
+      296
+    ],
+    "same": [
+      31,
+      140
+    ],
+    "no": [
+      31,
+      80
+    ],
+    "matter": [
+      31
+    ],
+    "where": [
+      31,
+      101,
+      245
+    ],
+    "they": [
+      32,
+      33,
+      64
+    ],
+    "are": [
+      32,
+      33,
+      97,
+      170,
+      248,
+      268,
+      270
+    ],
+    "or": [
+      32,
+      38,
+      46,
+      60,
+      65,
+      80,
+      145,
+      183,
+      193,
+      207,
+      222,
+      280,
+      286
+    ],
+    "machine": [
+      33,
+      36,
+      60,
+      105,
+      148
+    ],
+    "on": [
+      33,
+      46,
+      118,
+      124,
+      147,
+      284,
+      291
+    ],
+    "their": [
+      34,
+      50,
+      51,
+      67,
+      78
+    ],
+    "containers": [
+      34,
+      45,
+      61,
+      74,
+      85,
+      101,
+      225,
+      235
+    ],
+    "deployed": [
+      35
+    ],
+    "just": [
+      35,
+      199
+    ],
+    "about": [
+      36
+    ],
+    "any": [
+      36,
+      36,
+      128,
+      290
+    ],
+    "without": [
+      36,
+      59
+    ],
+    "compatibility": [
+      37
+    ],
+    "issues": [
+      37
+    ],
+    "so": [
+      38,
+      145,
+      252,
+      284
+    ],
+    "stay": [
+      39
+    ],
+    "system": [
+      39,
+      51,
+      113,
+      118,
+      122,
+      138
+    ],
+    "agnostic": [
+      40
+    ],
+    "making": [
+      40
+    ],
+    "similar": [
+      41
+    ],
+    "use": [
+      41,
+      146,
+      167,
+      199
+    ],
+    "less": [
+      42,
+      133
+    ],
+    "work": [
+      42
+    ],
+    "easier": [
+      43
+    ],
+    "maintain": [
+      44
+    ],
+    "these": [
+      44,
+      232
+    ],
+    "computer": [
+      46,
+      115
+    ],
+    "acts": [
+      47
+    ],
+    "like": [
+      47,
+      87,
+      161,
+      168
+    ],
+    "little": [
+      47
+    ],
+    "micro": [
+      47
+    ],
+    "gliders": [
+      48
+    ],
+    "eat": [
+      48
+    ],
+    "very": [
+      48
+    ],
+    "specific": [
+      49,
+      63,
+      78
+    ],
+    "jobs": [
+      49
+    ],
+    "each": [
+      49,
+      59,
+      144
+    ],
+    "operating": [
+      50,
+      112,
+      118
+    ],
+    "isolated": [
+      51
+    ],
+    "CPU": [
+      52
+    ],
+    "processes": [
+      52
+    ],
+    "memory": [
+      53,
+      108
+    ],
+    "network": [
+      54
+    ],
+    "resources": [
+      54,
+      97,
+      107
+    ],
+    "removed": [
+      55
+    ],
+    "stopped": [
+      58
+    ],
+    "again": [
+      58,
+      275
+    ],
+    "affecting": [
+      59
+    ],
+    "other": [
+      60,
+      89
+    ],
+    "host": [
+      60,
+      99,
+      115,
+      118
+    ],
+    "usually": [
+      62,
+      70
+    ],
+    "one": [
+      63,
+      76,
+      200,
+      205
+    ],
+    "tasks": [
+      63
+    ],
+    "such": [
+      64,
+      79,
+      174,
+      220,
+      236
+    ],
+    "as": [
+      64,
+      64,
+      80,
+      83,
+      134,
+      153,
+      174,
+      220,
+      227,
+      235,
+      237
+    ],
+    "might": [
+      64,
+      239
+    ],
+    "well": [
+      65,
+      85
+    ],
+    "database": [
+      65,
+      238
+    ],
+    "notice": [
+      66
+    ],
+    "application": [
+      66,
+      117,
+      236
+    ],
+    "then": [
+      67,
+      112,
+      113,
+      214
+    ],
+    "networks": [
+      67
+    ],
+    "together": [
+      68,
+      239
+    ],
+    "potentially": [
+      68
+    ],
+    "scaled": [
+      69
+    ],
+    "developer": [
+      69
+    ],
+    "will": [
+      70,
+      91,
+      131,
+      148,
+      160,
+      210
+    ],
+    "start": [
+      70,
+      163
+    ],
+    "by": [
+      71,
+      137,
+      182,
+      216,
+      258
+    ],
+    "accessing": [
+      71
+    ],
+    "doctor": [
+      72,
+      93,
+      132,
+      156,
+      160,
+      167,
+      198,
+      201,
+      213
+    ],
+    "hug": [
+      72
+    ],
+    "online": [
+      73
+    ],
+    "Cloud": [
+      73
+    ],
+    "repository": [
+      73
+    ],
+    "pull": [
+      75,
+      178,
+      200,
+      202,
+      212
+    ],
+    "containing": [
+      76
+    ],
+    "pre-configured": [
+      76
+    ],
+    "environment": [
+      77
+    ],
+    "programming": [
+      79
+    ],
+    "language": [
+      79
+    ],
+    "Ruby": [
+      80
+    ],
+    "JS": [
+      81
+    ],
+    "all": [
+      81,
+      231,
+      294
+    ],
+    "files": [
+      82,
+      136
+    ],
+    "Frameworks": [
+      82
+    ],
+    "needed": [
+      82,
+      143
+    ],
+    "using": [
+      85,
+      137,
+      140,
+      164,
+      181,
+      201,
+      288
+    ],
+    "popular": [
+      86,
+      170
+    ],
+    "Plex": [
+      87
+    ],
+    "Media": [
+      87
+    ],
+    "Server": [
+      87,
+      126,
+      247,
+      250,
+      271
+    ],
+    "nextcloud": [
+      88
+    ],
+    "many": [
+      89,
+      90,
+      218
+    ],
+    "open": [
+      89
+    ],
+    "source": [
+      90
+    ],
+    "tools": [
+      90
+    ],
+    "which": [
+      91,
+      152,
+      206,
+      266
+    ],
+    "installing": [
+      92,
+      175
+    ],
+    "videos": [
+      93
+    ],
+    "form": [
+      94
+    ],
+    "but": [
+      95,
+      231
+    ],
+    "unlike": [
+      95
+    ],
+    "machines": [
+      96,
+      104,
+      124
+    ],
+    "shared": [
+      98
+    ],
+    "directly": [
+      98
+    ],
+    "allows": [
+      99
+    ],
+    "may": [
+      102,
+      204,
+      206,
+      234
+    ],
+    "only": [
+      102,
+      132
+    ],
+    "able": [
+      102,
+      135
+    ],
+    "few": [
+      103
+    ],
+    "see": [
+      104,
+      267,
+      296
+    ],
+    "quarantine": [
+      106
+    ],
+    "set": [
+      106
+    ],
+    "amount": [
+      106
+    ],
+    "hard": [
+      107
+    ],
+    "drive": [
+      108
+    ],
+    "space": [
+      108,
+      134
+    ],
+    "processing": [
+      109
+    ],
+    "power": [
+      110
+    ],
+    "emulate": [
+      110
+    ],
+    "hardware": [
+      111
+    ],
+    "Boonton": [
+      112
+    ],
+    "entire": [
+      112
+    ],
+    "VM": [
+      114
+    ],
+    "communicates": [
+      115
+    ],
+    "via": [
+      116
+    ],
+    "translator": [
+      116
+    ],
+    "called": [
+      119
+    ],
+    "hypervisor": [
+      120
+    ],
+    "natively": [
+      120,
+      131
+    ],
+    "kernel": [
+      122
+    ],
+    "bypassing": [
+      123
+    ],
+    "middleman": [
+      123
+    ],
+    "Linux": [
+      124,
+      129,
+      170
+    ],
+    "even": [
+      125
+    ],
+    "Windows": [
+      125,
+      126
+    ],
+    "above": [
+      127
+    ],
+    "means": [
+      128
+    ],
+    "version": [
+      129,
+      210
+    ],
+    "container": [
+      130,
+      145,
+      154,
+      166,
+      192,
+      211,
+      220,
+      226,
+      230,
+      232
+    ],
+    "not": [
+      131
+    ],
+    "uses": [
+      133
+    ],
+    "disk": [
+      134
+    ],
+    "reuse": [
+      135
+    ],
+    "efficiently": [
+      136
+    ],
+    "layered": [
+      137
+    ],
+    "file": [
+      138,
+      143,
+      157,
+      179
+    ],
+    "if": [
+      138,
+      197,
+      205,
+      208,
+      247,
+      279,
+      289
+    ],
+    "multiple": [
+      139
+    ],
+    "images": [
+      139,
+      188,
+      189
+    ],
+    "base": [
+      140
+    ],
+    "image": [
+      140,
+      152,
+      160,
+      183,
+      191,
+      193,
+      203,
+      214,
+      216
+    ],
+    "instance.": [
+      141
+    ],
+    "Only": [
+      141
+    ],
+    "keep": [
+      142
+    ],
+    "single": [
+      142,
+      229,
+      236
+    ],
+    "copy": [
+      143
+    ],
+    "share": [
+      144,
+      194
+    ],
+    "them": [
+      144
+    ],
+    "it's": [
+      145,
+      231
+    ],
+    "how": [
+      146,
+      159
+    ],
+    "install": [
+      146
+    ],
+    "provide": [
+      148
+    ],
+    "link": [
+      149,
+      291
+    ],
+    "description": [
+      149,
+      293
+    ],
+    "dockerfile": [
+      150,
+      186
+    ],
+    "between": [
+      151
+    ],
+    "built": [
+      151,
+      161,
+      191
+    ],
+    "into": [
+      152,
+      220,
+      281
+    ],
+    "okay": [
+      154
+    ],
+    "let's": [
+      155
+    ],
+    "break": [
+      155
+    ],
+    "down": [
+      156,
+      213
+    ],
+    "surprisingly": [
+      157
+    ],
+    "Simple": [
+      158
+    ],
+    "Text": [
+      158
+    ],
+    "document": [
+      158
+    ],
+    "instructs": [
+      159
+    ],
+    "blueprint": [
+      161
+    ],
+    "U-verse": [
+      162
+    ],
+    "select": [
+      162
+    ],
+    "basin": [
+      163
+    ],
+    "wrench": [
+      163
+    ],
+    "keyword": [
+      165
+    ],
+    "would": [
+      165
+    ],
+    "find": [
+      166,
+      256,
+      261,
+      262
+    ],
+    "Hub": [
+      168,
+      213
+    ],
+    "mentioned": [
+      168
+    ],
+    "bun": [
+      169
+    ],
+    "Alpine": [
+      170
+    ],
+    "choices": [
+      171
+    ],
+    "there": [
+      172,
+      217,
+      261
+    ],
+    "commands": [
+      173,
+      232
+    ],
+    "downloading": [
+      174
+    ],
+    "course": [
+      177,
+      217
+    ],
+    "we'll": [
+      177,
+      281
+    ],
+    "leave": [
+      177
+    ],
+    "docks": [
+      178
+    ],
+    "up": [
+      178,
+      286
+    ],
+    "complete": [
+      179,
+      187
+    ],
+    "build": [
+      180,
+      181,
+      245
+    ],
+    "followed": [
+      181,
+      215
+    ],
+    "tea": [
+      182
+    ],
+    "Flags": [
+      182
+    ],
+    "password": [
+      184
+    ],
+    "command": [
+      184
+    ],
+    "location": [
+      185
+    ],
+    "once": [
+      186
+    ],
+    "verify": [
+      187
+    ],
+    "existence": [
+      188
+    ],
+    "now": [
+      190,
+      272
+    ],
+    "you're": [
+      190
+    ],
+    "push": [
+      193
+    ],
+    "cloud": [
+      194
+    ],
+    "others": [
+      194,
+      197
+    ],
+    "speaking": [
+      196
+    ],
+    "sharing": [
+      196
+    ],
+    "don't": [
+      197,
+      209
+    ],
+    "create": [
+      198
+    ],
+    "imagine": [
+      198
+    ],
+    "want": [
+      199,
+      234,
+      240
+    ],
+    "premade": [
+      199
+    ],
+    "hub": [
+      201
+    ],
+    "also": [
+      204
+    ],
+    "include": [
+      204
+    ],
+    "tag": [
+      205,
+      209
+    ],
+    "available": [
+      205,
+      219,
+      269,
+      272
+    ],
+    "specify": [
+      206,
+      209
+    ],
+    "virgin": [
+      207
+    ],
+    "variant": [
+      207
+    ],
+    "latest": [
+      210
+    ],
+    "what's": [
+      211
+    ],
+    "patched": [
+      211
+    ],
+    "rebuild": [
+      213
+    ],
+    "enter": [
+      215,
+      231
+    ],
+    "options": [
+      218
+    ],
+    "when": [
+      219
+    ],
+    "detach": [
+      221
+    ],
+    "mode": [
+      221
+    ],
+    "takdi": [
+      222
+    ],
+    "assigning": [
+      223
+    ],
+    "port": [
+      223
+    ],
+    "web": [
+      224
+    ],
+    "LS": [
+      227
+    ],
+    "add": [
+      228
+    ],
+    "more": [
+      228
+    ],
+    "Bill": [
+      228
+    ],
+    "Pierre": [
+      228
+    ],
+    "here": [
+      228
+    ],
+    "fun": [
+      230
+    ],
+    "annoying": [
+      231
+    ],
+    "he": [
+      233
+    ],
+    "control": [
+      234
+    ],
+    "several": [
+      234
+    ],
+    "part": [
+      235,
+      280
+    ],
+    "nap": [
+      237
+    ],
+    "something": [
+      239
+    ],
+    "do": [
+      240
+    ],
+    "WordPress": [
+      241
+    ],
+    "example": [
+      241
+    ],
+    "we're": [
+      242,
+      265
+    ],
+    "going": [
+      242,
+      248
+    ],
+    "accomplishing": [
+      243
+    ],
+    "compose": [
+      244,
+      288
+    ],
+    "our": [
+      245
+    ],
+    "next": [
+      245,
+      296
+    ],
+    "Home": [
+      247,
+      249,
+      271
+    ],
+    "secure": [
+      249
+    ],
+    "yourself": [
+      251
+    ],
+    "SSL": [
+      252
+    ],
+    "access": [
+      252
+    ],
+    "anywhere": [
+      253
+    ],
+    "world": [
+      254
+    ],
+    "her.": [
+      255
+    ],
+    "Com": [
+      255
+    ],
+    "first": [
+      257
+    ],
+    "Dominion": [
+      257
+    ],
+    "visiting": [
+      258
+    ],
+    "forward": [
+      258
+    ],
+    "squid": [
+      260
+    ],
+    "check": [
+      260
+    ],
+    "out": [
+      261
+    ],
+    "tool": [
+      262
+    ],
+    "cool": [
+      262,
+      263
+    ],
+    "names": [
+      263
+    ],
+    "extensions": [
+      264
+    ],
+    "since": [
+      265
+    ],
+    "building": [
+      265,
+      286
+    ],
+    "home": [
+      265
+    ],
+    "type": [
+      266
+    ],
+    "currently": [
+      269
+    ],
+    "related": [
+      270
+    ],
+    "him": [
+      272
+    ],
+    "while": [
+      272
+    ],
+    "they're": [
+      272
+    ],
+    "make": [
+      273
+    ],
+    "sure": [
+      273
+    ],
+    "support": [
+      275
+    ],
+    "show": [
+      275
+    ],
+    "my": [
+      275
+    ],
+    "hotmail.com": [
+      276
+    ],
+    "watching": [
+      278
+    ],
+    "let": [
+      279
+    ],
+    "me": [
+      279
+    ],
+    "know": [
+      279
+    ],
+    "you'd": [
+      279
+    ],
+    "interested": [
+      279
+    ],
+    "deeper": [
+      280
+    ],
+    "some": [
+      282
+    ],
+    "specifics": [
+      282
+    ],
+    "dr.": [
+      283
+    ],
+    "Laird": [
+      283
+    ],
+    "stick": [
+      285
+    ],
+    "around": [
+      285
+    ],
+    "coming": [
+      285
+    ],
+    "questions": [
+      290
+    ],
+    "come": [
+      290
+    ],
+    "chat": [
+      290
+    ],
+    "Discord": [
+      291
+    ],
+    "everything": [
+      292
+    ],
+    "else": [
+      292
+    ],
+    "need": [
+      293
+    ],
+    "below": [
+      294
+    ],
+    "right": [
+      295
+    ],
+    "I'll": [
+      296
+    ]
+  },
+  "video_url": "https://www.youtube.com/watch?v=_dfLOzuIg2o"
+}
