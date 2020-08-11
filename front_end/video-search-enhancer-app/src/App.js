@@ -12,8 +12,8 @@ import PropTypes, { array } from 'prop-types';
 import './App.css';
 
 const searchClient = algoliasearch(
-  'DDZ5A54Y8V',
-  'd920e42fae52d117a177ecb4b02417e7'
+  process.env.ALGOLIA_APP_ID,
+  process.env.ALGOLIA_API_KEY,
 );
 
 class App extends Component {
@@ -31,7 +31,7 @@ class App extends Component {
             </a>
           </p>
         </header>
-
+      <div><h1>  Video Search Enhancer</h1></div>
         <div className="container">
           <InstantSearch searchClient={searchClient} indexName="videos">
             <div className="search-panel">

@@ -13,15 +13,12 @@ ydl_opts = {
 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
     ydl.download(['https://www.youtube.com/watch?v=_dfLOzuIg2o'])
 
-
 import os
-print(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
-
 from google.cloud import speech_v1
-from google.cloud.speech_v1 import enums
 from collections import defaultdict
 import json
 
+print(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 
 def sample_long_running_recognize(storage_uri):
     """
